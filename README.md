@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Professional Portfolio
+
+A modern, professional portfolio built with Next.js 15, TypeScript, and Tailwind CSS featuring a clean black and white design.
+
+## Features
+
+- ✅ Component-based architecture
+- ✅ React Hooks (useState, useEffect, custom hooks)
+- ✅ Protected admin route with authentication
+- ✅ Responsive design
+- ✅ Profile and project photo support
+- ✅ Contact form with state management
+- ✅ Frontend-focused skills showcase
+
+## Project Structure
+
+```
+portifolio/
+├── app/
+│   ├── admin/          # Protected admin dashboard
+│   ├── login/          # Login page
+│   ├── layout.tsx
+│   ├── page.tsx        # Main portfolio page
+│   └── globals.css
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx        # Profile photo section
+│   ├── About.tsx
+│   ├── Skills.tsx
+│   ├── Projects.tsx    # Project images
+│   ├── Contact.tsx     # Form with hooks
+│   ├── Footer.tsx
+│   └── ProtectedRoute.tsx
+├── hooks/
+│   └── useAuth.ts      # Custom authentication hook
+└── public/
+    ├── profile.jpg     # Your profile photo
+    ├── project1.jpg    # Project screenshots
+    ├── project2.jpg
+    └── project3.jpg
+```
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Add your photos to the `public/` folder:
+   - `profile.jpg` - Your profile photo (recommended: 512x512px)
+   - `project1.jpg`, `project2.jpg`, `project3.jpg` - Project screenshots
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## Routes
 
-To learn more about Next.js, take a look at the following resources:
+- `/` - Main portfolio (public)
+- `/login` - Admin login page (password: admin123)
+- `/admin` - Protected admin dashboard
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Update Personal Information
+Edit the following files:
+- `components/Hero.tsx` - Name and title
+- `components/About.tsx` - About section
+- `components/Contact.tsx` - Contact information
+- `components/Skills.tsx` - Skills list
+- `components/Projects.tsx` - Project details
 
-## Deploy on Vercel
+### Change Admin Password
+Edit `hooks/useAuth.ts` and change the password in the login function.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 15
+- TypeScript
+- Tailwind CSS
+- React Hooks (useState, useEffect, custom hooks)
+- Client-side routing and protection
+
+## License
+
+MIT

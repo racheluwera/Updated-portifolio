@@ -1,0 +1,29 @@
+import ProjectCard from "@/components/ProjectCard";
+
+export default function Projects() {
+  const projects = [
+    {
+      title: "Book Store App",
+      description: "A full-stack book store using Next.js and MongoDB.",
+      image: "/next.svg",
+      link: "#",
+    },
+    {
+      title: "Portfolio Website",
+      description: "This portfolio created with Next.js & Tailwind CSS.",
+      image: "/vercel.svg",
+      link: "#",
+    },
+  ];
+
+  return (
+    <section id="projects" className="py-20 bg-gray-50 text-center">
+      <h2 className="text-3xl font-bold mb-8">Projects</h2>
+      <div className="flex flex-wrap justify-center gap-6">
+        {projects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
+      </div>
+    </section>
+  );
+}
