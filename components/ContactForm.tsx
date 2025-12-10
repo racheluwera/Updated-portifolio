@@ -16,7 +16,7 @@ export default function ContactForm() {
     <section id="contact" className="py-20 bg-white text-center">
       <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
       <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-        Welcome to my portfolio! I'd love to hear from you. Whether you have a project in mind, 
+        Welcome to my portfolio! Iwould love to hear from you. Whether you have a project in mind, 
         want to collaborate, or just want to say hello, feel free to reach out.
       </p>
       {submitted ? (
@@ -46,7 +46,7 @@ export default function ContactForm() {
             className="border p-3 rounded-lg"
             required
           />
-          <button className="bg-green-700 text-white py-3 rounded-lg font-semibold">
+          <button className="bg-gray-600 text-white py-3 rounded-lg font-semibold">
             Send Message
           </button>
         </form>

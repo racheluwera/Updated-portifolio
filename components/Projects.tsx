@@ -2,7 +2,7 @@
 
 const projects = [
   {
-    title: 'Project One',
+    title: 'Handbags',
     description: 'A comprehensive web application built with Next.js and TypeScript, featuring real-time data processing and modern UI/UX design.'
   },
   {

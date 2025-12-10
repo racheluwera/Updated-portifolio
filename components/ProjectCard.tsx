@@ -14,25 +14,23 @@ export default function ProjectCard({ title, description, image, link }: Project
 
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition">
-      <div className="h-48 relative bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+      <div className="h-48 relative bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
         {!imageError ? (
           <Image 
-            src={image} 
+            src={image}
             fill
             alt={title} 
-            className="object-contain p-4"
+            className="object-cover"
             onError={() => setImageError(true)}
           />
         ) : (
-          <div className="text-white text-lg font-semibold">
-            {title}
-          </div>
+          <span className="text-white text-sm">Project Image</span>
         )}
       </div>
       <div className="p-6">
         <h3 className="text-2xl font-bold mb-3 text-gray-800">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
-        <a href={link} target="_blank" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm font-semibold inline-block">
+        <a href="https://smart-shop-vf8a.vercel.app/" target="_blank" className="px-4 py-2 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg hover:shadow-lg transition text-sm font-semibold inline-block">
           View Project
         </a>
       </div>

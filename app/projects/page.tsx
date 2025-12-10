@@ -3,9 +3,9 @@ import ProjectCard from "@/components/ProjectCard";
 export default function Projects() {
   const projects = [
     {
-      title: "Book Store App",
-      description: "A full-stack book store using Next.js and MongoDB.",
-      image: "/next.svg",
+      title: "Handbags",
+      description: "A stylish handbags showcase website built with HTML, Tailwind CSS, and JavaScript.",
+      image: "/image.png",
       link: "#",
     },
     {
