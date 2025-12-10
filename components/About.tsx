@@ -19,7 +19,7 @@ export default function About() {
           applications that deliver impact, performance, and seamless user interaction.
         </p>
         <a
-          href="/cv.pdf" 
+          href="/Rachel's CV.pdf" 
           download
           className="inline-block bg-white text-gray-800 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-200 transition"
         >
