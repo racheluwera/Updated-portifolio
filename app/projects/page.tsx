@@ -11,7 +11,7 @@ export default function Projects() {
     {
       title: "Portfolio Website",
       description: "This portfolio created with Next.js & Tailwind CSS.",
-      image: "/vercel.svg",
+      image: "/Rachel1.png",
       link: "#",
     },
   ];
