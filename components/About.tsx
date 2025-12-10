@@ -28,7 +28,7 @@ export default function About() {
       </div>
       <div className="w-full md:w-1/2 flex justify-center">
         <img
-          src="/ME.jpg"
+          src="/Rachel2.jpg"
           alt="My Profile"
           className="rounded-2xl shadow-lg w-80 h-80 object-cover border-4 border-white/30"
         />

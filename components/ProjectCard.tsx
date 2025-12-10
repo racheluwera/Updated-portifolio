@@ -30,7 +30,7 @@ export default function ProjectCard({ title, description, image, link }: Project
       <div className="p-6">
         <h3 className="text-2xl font-bold mb-3 text-gray-800">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
-        <a href="https://smart-shop-vf8a.vercel.app/" target="_blank" className="px-4 py-2 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-lg hover:shadow-lg transition text-sm font-semibold inline-block">
+        <a href="https://smart-shop-vf8a.vercel.app/" target="_blank" className="px-4 py-2 bg-gradient-to-r from-gray-600 to-gray-600 text-white rounded-lg hover:shadow-lg transition text-sm font-semibold inline-block">
           View Project
         </a>
       </div>
