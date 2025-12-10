@@ -13,12 +13,12 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("sending");
 
-    // Simple mailto link approach - opens user's email client
+    
     const subject = `Portfolio Contact: Message from ${formData.name}`;
     const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
     const mailtoLink = `mailto:racheluwera9@example.com?subject=${encodeURIComponent(subject)}&body=${body}`;
     
-    // Open email client
+ 
     window.open(mailtoLink);
     
     setStatus("success");
@@ -27,7 +27,8 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-orange-50 via-white to-red-50 text-center">
-      <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Contact Me</h2>
+      <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-gray
+      -600 bg-clip-text text-transparent">Contact Me</h2>
       <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
         I would love to hear from you! Whether you have a project in mind, 
         want to collaborate, or just want to say hello, feel free to reach out.
